@@ -128,7 +128,7 @@ export default {
 }
 
 .result {
-  font-family: NotoSansCJKtc-DemiLight;
+  font-weight: 200;
   font-size: 63px;
   color: #FFFFFF;
   letter-spacing: -1.52px;
@@ -156,7 +156,7 @@ export default {
 }
 
 .title {
-  font-family: NotoSansCJKtc-DemiLight;
+  font-weight: 200;
   font-size: 63px;
   color: #FFFFFF;
   letter-spacing: -1.52px;
@@ -172,7 +172,7 @@ export default {
 }
 
 .caption {
-  font-family: .PingFangTC-Light;
+  font-weight: 200;
   font-size: 22px;
   color: #FFFFFF;
   letter-spacing: -0.53px;
@@ -269,7 +269,7 @@ export default {
 }
 
 .reason {
-  font-family: NotoSansCJKtc-DemiLight;
+  font-weight: 200;
   font-size: 32px;
   color: #FFFFFF;
   letter-spacing: -0.77px;

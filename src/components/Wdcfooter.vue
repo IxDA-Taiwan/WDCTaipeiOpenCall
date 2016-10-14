@@ -41,7 +41,7 @@ export default {
   width:100vw;
   max-width: 100%;
   height: 730px;
-  background-color: #2d2d2d;
+  background-color: #333;
   box-shadow: 0px -4px 20px 0px rgba(0,0,0,0.50);
 }
 
@@ -59,7 +59,7 @@ export default {
 }
 
 .title {
-  font-family: .PingFangTC-Light;
+  font-weight: 200;
   font-size: 22px;
   color: #FFFFFF;
   letter-spacing: -0.53px;

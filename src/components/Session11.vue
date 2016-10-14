@@ -159,7 +159,7 @@ export default {
 }
 
 .text {
-  font-family: NotoSansCJKtc-DemiLight;
+  font-weight: 200;
   font-size: 63px;
   color: #FFFFFF;
   letter-spacing: -1.52px;
@@ -187,7 +187,7 @@ export default {
 }
 
 .title2 {
-  font-family: NotoSansCJKtc-DemiLight;
+  font-weight: 200;
   font-size: 63px;
   color: #FFFFFF;
   letter-spacing: -1.52px;

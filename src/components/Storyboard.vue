@@ -81,7 +81,7 @@
       </div>
 
       <div class="scene">
-        <div class="chain chain1-1" v-bind:style="{left: chain3left + 'vw'}"></div>
+        <div class="chain chain1-1 chain3-1" v-bind:style="{left: chain3left + 'vw'}"></div>
         <div class="chain chain1-2" v-bind:style="{left: chain3left + 'vw'}">
           <img src="/static/assets/icn_can.png" />
         </div>
@@ -95,14 +95,14 @@
       </div>
 
       <div class="scene">
-        <div class="chain chain2-1" v-bind:style="{right: chain4left + 'vw'}"></div>
+        <div class="chain chain2-1 chain4-1" v-bind:style="{right: chain4left + 'vw'}"></div>
         <div class="chain chain2-2" v-bind:style="{right: chain4left + 'vw'}">
           <img src="/static/assets/icn_fly.png" />
         </div>
-        <div class="chain chain2-3" v-bind:style="{right: chain4left + 'vw'}">
+        <div class="chain chain2-3 " v-bind:style="{right: chain4left + 'vw'}">
           <div>
             {{{ $t('scene3.chain4title') }}}
-            <div style="font-size:32px;line-height:50px;margin-top: 30px;">{{{ $t('scene3.chain4') }}}</div>
+            <div style="font-size: 32px; line-height: 50px; margin-top: 30px;">{{{ $t('scene3.chain4') }}}</div>
           </div>
         </div>
       </div>
@@ -254,62 +254,79 @@ export default {
 
       if (p < 1) {
         el.opacity1 = p
-      } else if (p >= 1 && p < 2) {
+      }
+      if (p >= 1 && p < 2) {
         el.opacity1 = 2 - p
-      } else if (p >= 2 && p < 3) {
+      }
+      if (p >= 2 && p < 3) {
         el.opacity2 = p - 2
-      } else if (p >= 3 && p < 4) {
+      }
+      if (p >= 3 && p < 4) {
         el.opacity2 = 4 - p
         el.diseasetop1 = 0
         el.diseasetop2 = 300
         el.diseasetop3 = 180
         el.diseasetop4 = 60
-      } else if (p >= 5 && p < 5.3) {
+      }
+      if (p >= 5 && p < 5.3) {
         el.diseasetop1 = (5.3 - p) * 0
         el.diseasetop2 = (5.3 - p) * 1000
         el.diseasetop3 = (5.3 - p) * 600
         el.diseasetop4 = (5.3 - p) * 200
-      } else if (p >= 5.3 && p < 6) {
+      }
+      if (p >= 5.3 && p < 6) {
         el.diseasetop1 = 0
         el.diseasetop2 = 0
         el.diseasetop3 = 0
         el.diseasetop4 = 0
-      } else if (p >= 6 && p < 6.5) {
+      }
+      if (p >= 6 && p < 6.1) {
         el.chain1left = -100
-      } else if (p >= 6.5 && p < 7.5) {
+      }
+      if (p >= 6.1 && p < 7.1) {
         console.log('c1 in')
         el.chain1left = 0
         el.chain2left = -100
-      } else if (p >= 7.5 && p < 8.5) {
+      }
+      if (p >= 7.1 && p < 8.1) {
         console.log('c2 in')
         el.chain2left = 0
         el.chain3left = -100
-      } else if (p >= 8.5 && p < 9.5) {
+      }
+      if (p >= 8.1 && p < 9.1) {
         console.log('c3 in')
         el.chain3left = 0
         el.chain4left = -100
-      } else if (p >= 9.5 && p < 10.5) {
+      }
+      if (p >= 9.1 && p < 10.1) {
         console.log('c4 in')
         el.chain4left = 0
-      } else if (p >= 10.5 && p < 12) {
+      }
+      if (p >= 10.1 && p < 12) {
         el.opacity3 = 0
-      } else if (p >= 12 && p < 13) {
+      }
+      if (p >= 12 && p < 13) {
         el.opacity3 = p - 12
         el.opacity4 = 0
-      } else if (p >= 13 && p < 14) {
+      }
+      if (p >= 13 && p < 14) {
         el.opacity3 = 14 - p
-      } else if (p >= 14 && p < 15) {
+      }
+      if (p >= 14 && p < 15) {
         el.opacity3 = 0
         el.opacity4 = p - 14
         el.s5bottom = -180
-      } else if (p >= 15 && p < 16) {
+      }
+      if (p >= 15 && p < 16) {
         el.opacity4 = 1
         el.s5bottom = 0
         console.log(el.s5bottom)
-      } else if (p >= 16 && p < 17) {
+      }
+      if (p >= 16 && p < 17) {
         el.opacity4 = 17 - p
         el.s5bottom = -180
-      } else if (p >= 17 && p < 18) {
+      }
+      if (p >= 17 && p < 18) {
         el.opacity4 = 0
       }
 
@@ -440,7 +457,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: NotoSansCJKtc-DemiLight;
+  font-weight: 200;
   font-size: 63px;
   letter-spacing: -1.52px;
   line-height: 85px;
@@ -460,7 +477,7 @@ export default {
 .chain1-1 {
   width: 50%;
   height: 100vh;
-  background-image: url(/static/assets/bg_1_1.jpg);
+  background-image: url(/static/assets/bg_1_8.png);
   background-position: center;
   background-size: cover;
   box-sizing: border-box;;
@@ -503,7 +520,7 @@ export default {
 .chain2-1 {
   width: 50%;
   height: 100vh;
-  background-image: url(/static/assets/bg_1_1.jpg);
+  background-image: url(/static/assets/bg_1_9.png);
   background-position: center;
   background-size: cover;
   box-sizing: content-box;
@@ -542,6 +559,14 @@ export default {
   align-items: center;
   justify-content: center;
   text-align: right;
+}
+
+.chain3-1 {
+  background-image: url(/static/assets/bg_1_10.png);
+}
+
+.chain4-1 {
+  background-image: url(/static/assets/bg_1_11.png);
 }
 
 .session4 {
@@ -598,7 +623,7 @@ export default {
   max-width: 100%;
   min-width: 1024px;
   height: 600vh;
-  background-image: url(/static/assets/bg_1_1.jpg);
+  background-image: url(/static/assets/bg_2_3.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -650,7 +675,7 @@ export default {
   max-width: 100%;
   min-width: 1024px;
   height: 100vh;
-  background-image: url(/static/assets/bg_1_1.jpg);
+  background-image: url(/static/assets/bg_2_3.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -741,7 +766,7 @@ export default {
 }
 .session7 .dialog .dialogbox .acontent {
   /* - 享受美味和收穫精神滿足 - 感受到歸: */
-  font-family: NotoSansCJKtc-DemiLight;
+  font-weight: 200;
   font-size: 26px;
   color: #2C3249;
   letter-spacing: -0.63px;
@@ -752,7 +777,7 @@ export default {
 }
 .session7 .dialog .dialogbox .aquote {
   /* - 享受美味和收穫精神滿足 - 感受到歸: */
-  font-family: NotoSansCJKtc-DemiLight;
+  font-weight: 200;
   font-size: 26px;
   color: #2C3249;
   letter-spacing: -0.63px;

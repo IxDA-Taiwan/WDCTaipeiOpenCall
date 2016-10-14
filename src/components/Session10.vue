@@ -156,7 +156,7 @@ export default {
   background: -moz-linear-gradient(top, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  font-family: NotoSansCJKtc-DemiLight;
+  font-weight: 200;
   font-size: 63px;
   color: #FFFFFF;
   letter-spacing: -1.52px;
@@ -179,7 +179,7 @@ export default {
 }
 
 .title2 {
-  font-family: NotoSansCJKtc-DemiLight;
+  font-weight: 200;
   font-size: 63px;
   color: #FFFFFF;
   letter-spacing: -1.52px;
@@ -204,7 +204,7 @@ export default {
 }
 
 .caption {
-  font-family: .PingFangTC-Light;
+  font-weight: 200;
   font-size: 22px;
   color: #FFFFFF;
   letter-spacing: -0.53px;

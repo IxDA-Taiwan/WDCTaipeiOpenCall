@@ -331,7 +331,7 @@ export default {
 }
 
 .title {
-  font-family: NotoSansCJKtc-DemiLight;
+  font-weight: 200;
   font-size: 63px;
   color: #FFFFFF;
   letter-spacing: -1.52px;

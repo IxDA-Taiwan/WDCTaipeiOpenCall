@@ -99,7 +99,7 @@ export default {
 .line .wrap .block {
   flex: 1;
   padding: 50px;
-  font-family: NotoSansCJKtc-DemiLight;
+  font-weight: 200;
   font-size: 32px;
   color: #FFFFFF;
   letter-spacing: -0.77px;
@@ -112,7 +112,7 @@ export default {
 }
 
 .line .wrap .block .title3 {
-font-family: .PingFangTC-Light;
+font-weight: 200;
 font-size: 22px;
 color: #FFFFFF;
 letter-spacing: -0.53px;
@@ -121,7 +121,7 @@ text-align: right;
 }
 
 .line .wrap .block .title4 {
-font-family: .PingFangTC-Light;
+font-weight: 200;
 font-size: 22px;
 color: #FFFFFF;
 letter-spacing: -0.53px;

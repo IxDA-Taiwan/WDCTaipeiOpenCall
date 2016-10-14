@@ -44,6 +44,12 @@
           <img src="/static/assets/app_01_phone.png" />
         </div>
 
+        <div class="app" v-bind:class="app">
+          <img class="app02" src="/static/assets/app_02_app.jpeg" />
+          <img class="app03" src="/static/assets/app_03_app.jpeg" />
+          <img class="app04" src="/static/assets/app_04_app.jpeg" />
+        </div>
+
         <div class="plant" v-bind:class="plant">
           <img src="/static/assets/app_02_plant.png" />
         </div>
@@ -268,7 +274,9 @@ export default {
 
       this.app2Title.entered = (i >= 0.175 && i < 0.35)
       this.mobile.entered = (i >= 0.175 && i < 0.425)
+      this.app.entered = (i >= 0.175 && i < 0.425)
       this.mobile.entered2 = (i >= 0.2 && i < 0.35)
+      this.app.entered2 = (i >= 0.2 && i < 0.35)
       this.app2caption1.entered = (i >= 0.2 && i < 0.35)
       this.app2content.entered = (i >= 0.225 && i < 0.35)
       this.main.entered2 = (i >= 0.2 && i < 0.35)
@@ -291,6 +299,7 @@ export default {
       this.app4Title.entered = (i >= 0.425 && i < 0.5)
       this.app4caption1.entered = (i >= 0.45 && i < 0.5)
       this.mobile.entered3 = (i >= 0.425 && i < 0.5)
+      this.app.entered3 = (i >= 0.425 && i < 0.5)
       this.app4content.entered = (i >= 0.475 && i < 0.5)
       this.map.entered = (i >= 0.45 && i < 0.5)
       this.mapmark.entered = (i >= 0.475 && i < 0.5)
@@ -358,6 +367,11 @@ export default {
       },
       mom: {
         entered: 0
+      },
+      app: {
+        entered: 0,
+        entered2: 0,
+        entered3: 0
       },
       refrigerator: {
         entered: 0
@@ -597,7 +611,7 @@ export default {
 
 .title {
   transition: all 0.5s;
-  font-family: NotoSansCJKtc-DemiLight;
+  font-weight: 200;
   font-size: 63px;
   color: #FFFFFF;
   letter-spacing: -1.52px;
@@ -619,7 +633,7 @@ export default {
 
 .caption1 {
   transition: all 0.5s;
-  font-family: .PingFangTC-Light;
+  font-weight: 200;
   font-size: 22px;
   color: #FFFFFF;
   letter-spacing: -0.53px;
@@ -634,7 +648,7 @@ export default {
 
 .caption2 {
   transition: all 0.5s;
-  font-family: .PingFangTC-Light;
+  font-weight: 200;
   font-size: 22px;
   color: #FFFFFF;
   letter-spacing: -0.53px;
@@ -659,7 +673,7 @@ export default {
 
 .app2content {
   transition: all 0.5s;
-  font-family: .PingFangTC-Light;
+  font-weight: 200;
   color: #FFFFFF;
   letter-spacing: -0.53px;
   opacity: 0;
@@ -679,7 +693,7 @@ export default {
 
 .app3content {
   transition: all 0.5s;
-  font-family: .PingFangTC-Light;
+  font-weight: 200;
   color: #FFFFFF;
   letter-spacing: -0.53px;
   opacity: 0;
@@ -729,6 +743,46 @@ export default {
 
 .mobile.entered {
   opacity: 1;
+}
+
+.app {
+  position: absolute;
+  top: 313px;
+  left: 380px;
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: 0;
+}
+
+.app img {
+  width: 240px;
+  display: none;
+}
+
+.app.entered {
+  opacity: 1;
+}
+
+.app.entered .app02 {
+  display: block;
+}
+
+.app.entered2 {
+  opacity: 1;
+  left: 670px;
+}
+
+.app.entered2 .app03 {
+  display: block;
+}
+
+.app.entered3 {
+  opacity: 1;
+  left: 151px;
+}
+
+.app.entered3 .app04 {
+  display: block;
 }
 
 .mobile {

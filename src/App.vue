@@ -55,10 +55,13 @@ export default {
 <style>
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css');
 
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
 body, #app {
   width: 100vw;
   max-width: 100%;
   min-width: 1024px;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 .session {
