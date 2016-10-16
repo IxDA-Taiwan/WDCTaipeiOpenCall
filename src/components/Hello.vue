@@ -1,8 +1,8 @@
 <template>
   <div id="welcome" v-el:anchor class="welcome">
-      <!-- <video id="welcomevideo" v-el:video autoplay loop muted class="welcome">
+      <video id="welcomevideo" v-el:video autoplay loop muted class="welcome">
         <source src="/static/assets/wdc_Smile_1080.mp4" />
-      </video> -->
+      </video>
   </div>
 </template>
 
@@ -86,9 +86,22 @@ export default {
 div.welcome {
   height: 100vh;
   min-height: 640px;
-  background-image: url(/static/assets/wdc_Smile.jpg);
+  /*background-image: url(/static/assets/wdc_Smile.jpg);*/
   background-size: cover;
   background-position: center;
 }
 
+video.welcome {
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+    position: fixed;
+    left: 50%; /* % of surrounding element */
+    top: 50%;
+    transform: translate(-50%, -50%); /* % of current element */
+    z-index: -1;
+    background-image: url(/static/assets/wdc_Smile.jpg);
+    background-size: cover;
+}
 </style>

@@ -4,6 +4,7 @@
     <hello></hello>
     <div class="storyboard">
       <storyboard></storyboard>
+      <session7></session7>
       <session8></session8>
       <session9></session9>
       <!-- <session10></session10> -->
@@ -13,6 +14,7 @@
       <session14></session14>
       <session15></session15>
       <session16></session16>
+      <session17></session17>
     </div>
     <wdcfooter></wdcfooter>
   </div>
@@ -22,6 +24,7 @@
 import Hello from './components/Hello'
 import Navigation from './components/Navigation'
 import Storyboard from './components/Storyboard'
+import Session7 from './components/Session7'
 import Session8 from './components/Session8'
 import Session9 from './components/Session9'
 // import Session10 from './components/Session10'
@@ -31,6 +34,7 @@ import Session13 from './components/Session13'
 import Session14 from './components/Session14'
 import Session15 from './components/Session15'
 import Session16 from './components/Session16'
+import Session17 from './components/Session17'
 import Wdcfooter from './components/Wdcfooter'
 
 export default {
@@ -38,6 +42,7 @@ export default {
     Hello,
     Navigation,
     Storyboard,
+    Session7,
     Session8,
     Session9,
     // Session10,
@@ -47,6 +52,7 @@ export default {
     Session14,
     Session15,
     Session16,
+    Session17,
     Wdcfooter
   }
 }

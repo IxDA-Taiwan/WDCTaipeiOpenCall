@@ -262,7 +262,13 @@ export default {
     scroll: function (p) {
       const i = p / 10 * 7
       this.app1Title.entered = (i < 0.175)
-      this.sceneOpacity = (i < 0.1) ? (i * 10) : 1
+      if (i < 0.1) {
+        this.sceneOpacity = i * 10
+      } else if (i > 0.6) {
+        this.sceneOpacity = (0.7 - i) * 10
+      } else {
+        this.sceneOpacity = 1
+      }
       this.refrigerator.entered = (i >= 0.1 && i < 0.175)
       this.main.entered = (i >= 0.1 && i < 0.175) || (i >= 0.35 && i < 0.425) || (i >= 0.5)
       this.main.food = (i >= 0.35 && i < 0.425)
