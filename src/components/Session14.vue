@@ -18,7 +18,7 @@
         </div>
 
         <div class="text1">
-          1. 資訊接觸
+          {{{ $t('scene14.dot1') }}}
         </div>
 
         <div class="point2">
@@ -29,7 +29,7 @@
         </div>
 
         <div class="text2">
-          2. 情感聯繫
+          {{{ $t('scene14.dot2') }}}
         </div>
 
         <div class="point3">
@@ -40,7 +40,7 @@
         </div>
 
         <div class="text3">
-          3. 意識認同
+          {{{ $t('scene14.dot3') }}}
         </div>
 
         <div class="point4">
@@ -51,7 +51,7 @@
         </div>
 
         <div class="text4">
-          4. 下定決策
+          {{{ $t('scene14.dot4') }}}
         </div>
 
         <div class="point5">
@@ -62,7 +62,7 @@
         </div>
 
         <div class="text5">
-          5. 行動參與
+          {{{ $t('scene14.dot5') }}}
         </div>
 
         <div class="point6">
@@ -73,7 +73,7 @@
         </div>
 
         <div class="text6">
-          6. 長期行為
+          {{{ $t('scene14.dot6') }}}
         </div>
       </div>
     </div>

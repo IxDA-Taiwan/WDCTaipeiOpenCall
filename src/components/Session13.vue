@@ -7,22 +7,22 @@
         </div>
         <div class="arrow arrow2" v-bind:style="{opacity: group1Opacity}">
           <img class="arrow-img" src="/static/assets/app_arrow02.png" />
-          <div class="text">回朔</div>
+          <div class="text">{{{ $t('scene13.rev') }}}</div>
         </div>
         <div class="arrow arrow3" v-bind:style="{opacity: group2Opacity}">
           <img class="arrow-img" src="/static/assets/app_arrow02.png" />
-          <div class="text">回朔</div>
+          <div class="text">{{{ $t('scene13.rev') }}}</div>
         </div>
         <div class="arrow arrow4" v-bind:style="{opacity: group2Opacity}">
           <img class="arrow-img" src="/static/assets/app_arrow02.png" />
-          <div class="text">回朔</div>
+          <div class="text">{{{ $t('scene13.rev') }}}</div>
         </div>
 
         <div class="circle1">
 
         </div>
         <div class="text1">
-          現況
+          {{{ $t('scene13.now') }}}
         </div>
         <div class="circle2" v-bind:style="{opacity: group2Opacity}">
           <div class="text">
@@ -30,7 +30,7 @@
           </div>
         </div>
         <div class="text2" v-bind:style="{opacity: group2Opacity}">
-          在地農產電商平台
+          {{{ $t('scene13.app1') }}}
         </div>
         <div class="circle3" v-bind:style="{opacity: group1Opacity}">
           <div class="text">
@@ -38,18 +38,17 @@
           </div>
         </div>
         <div class="text3" v-bind:style="{opacity: group1Opacity}">
-          安心食材供應體系
+          {{{ $t('scene13.app2') }}}
         </div>
         <div class="circle4">
           <div class="circle5">
             <div class="text">
-              無憂飲食<br/>
-              方案
+              {{{ $t('scene13.solution') }}}
             </div>
           </div>
         </div>
         <div class="content">
-          若將無憂的飲食選擇放置在長期目標燈塔的位置，第一階段我們期望透過台北在地農產電商平台拓展台北人對食安意識的認知，第二階段將安心食材透過供應體系將安心選擇推送到社會各個角落。
+          {{{ $t('scene13.content') }}}
         </div>
       </div>
     </div>

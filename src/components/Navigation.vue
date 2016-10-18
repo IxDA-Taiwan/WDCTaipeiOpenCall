@@ -35,6 +35,9 @@
         <div class="menu-item">
           <span class="number">04.</span><span class="title">{{{ $t('initial.menu.title4') }}}</span>
         </div>
+        <div class="menu-item">
+          <a v-link="'en'" class="en">EN</a><a v-link="'/'" class="zh">中文</a>
+        </div>
       </div>
       <div class="progress-container" style="display: none;">
         <span class="percentage">0%</span>
@@ -255,14 +258,39 @@ export default {
       .menu-item {
         margin-top: 60px;
         font-size: 1.6em;
-        cursor: pointer;
 
         span.number {
           margin-left: -60px;
+          cursor: pointer;
         }
 
         span.title {
           margin-left: 35px;
+          cursor: pointer;
+        }
+        a.en {
+        cursor: pointer;
+          display: inline-block;
+          margin-left: -73px;
+          width: 35px;
+          height: 33px;
+          color: #fff;
+          border: 2px solid #fff;
+          padding: 5px 15px 5px 20px;
+          text-decoration: none;
+          border-radius: 20px 0 0 20px;
+        }
+        a.zh {
+        cursor: pointer;
+          display: inline-block;
+          width: 55px;
+          height: 33px;
+          color: #F3BB63;
+          background-color: #fff;
+          border: 2px solid #fff;
+          padding: 5px 20px 5px 15px;
+          text-decoration: none;
+          border-radius: 0 20px 20px 0;
         }
       }
     }
