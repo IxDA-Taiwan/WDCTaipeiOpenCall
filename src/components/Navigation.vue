@@ -23,16 +23,16 @@
           <img src="/static/assets/btn_close.png" class="normal" />
           <img src="/static/assets/btn_close_press.png" class="press" />
         </div>
-        <div class="menu-item">
+        <div class="menu-item" @click="goto('#s1')">
           <span class="number">01.</span><span class="title">{{{ $t('initial.menu.title1') }}}</span>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" @click="goto('#s2')">
           <span class="number">02.</span><span class="title">{{{ $t('initial.menu.title2') }}}</span>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" @click="goto('#s3')">
           <span class="number">03.</span><span class="title">{{{ $t('initial.menu.title3') }}}</span>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" @click="goto('#s4')">
           <span class="number">04.</span><span class="title">{{{ $t('initial.menu.title4') }}}</span>
         </div>
         <div class="menu-item">
@@ -54,6 +54,8 @@
 </template>
 
 <script>
+import $ from 'jquery'
+
 export default {
   data: () => {
     return {
@@ -65,6 +67,11 @@ export default {
   methods: {
     menuHandler: function () {
       this.menu.open = !this.menu.open
+    },
+    goto: function (selector) {
+      $('html, body').animate({
+        scrollTop: $(selector).offset().top
+      }, 2000)
     }
   }
 }
@@ -258,6 +265,11 @@ export default {
       .menu-item {
         margin-top: 60px;
         font-size: 1.6em;
+        color: #fff;
+
+        &:hover {
+          color: #000;
+        }
 
         span.number {
           margin-left: -60px;

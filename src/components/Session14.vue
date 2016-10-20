@@ -1,5 +1,5 @@
 <template>
-  <div v-el:anchor class="session">
+  <div v-el:anchor class="session" id="s4">
     <div class="scene" v-bind:style="{display: sceneDisplay, opacity: scene1Opacity}">
         <img src="/static/assets/app_0_logo.png" />
         <h2>
@@ -90,7 +90,6 @@ export default {
       this.sceneDisplay = 'none'
     },
     scroll: function (p) {
-      console.log(p)
       if (p <= 0.333) {
         this.scene1Opacity = p * 3
         this.scene2Opacity = 0

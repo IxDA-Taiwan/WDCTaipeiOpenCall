@@ -1,7 +1,7 @@
 <template>
   <div class="storyboard">
     <scrollfire @progress="progress" @left="left" multiple></scrollfire>
-    <div class="session1" v-bind:class="[fixed]">
+    <div class="session1" id="s1" v-bind:class="[fixed]">
       <div class="scene fixed text" v-bind:style="{opacity: opacity1}">
         {{{ $t('scene1.title1') }}}
       </div>
@@ -281,10 +281,6 @@ export default {
         this.$els.video1.play()
       }
 
-      if (p >= 16) {
-        this.$els.video1.currentTime = 0
-      }
-
       if (p >= 18 && p < 19) {
         this.$els.video1.volume = 1
       }
@@ -302,6 +298,8 @@ export default {
     left: (el) => {
       el.opacity1 = 0
       el.opacity2 = 0
+      el.opacity3 = 0
+      el.opacity4 = 0
     }
   }
 }

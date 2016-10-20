@@ -1,5 +1,5 @@
 <template>
-  <div v-el:anchor class="session">
+  <div v-el:anchor class="session" id="s3">
     <div class="scene" v-bind:style="{display: sceneDisplay, opacity: sceneOpacity}">
       <div class="wrap">
         <div class="title" v-bind:style="{top: titleTop + 'vh'}">

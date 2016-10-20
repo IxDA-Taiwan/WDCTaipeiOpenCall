@@ -1,5 +1,5 @@
 <template>
-  <div class="session7">
+  <div class="session7" id="s2">
     <div class="title">{{{ $t('scene7.title') }}}</div>
     <div class="attitude">
       <div class="wrap">
