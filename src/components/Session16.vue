@@ -777,10 +777,10 @@ export default {
   opacity: 1;
   left: 670px;
 }
-
+/*
 .app.entered2 .app03 {
   display: block;
-}
+}*/
 
 .app.entered3 {
   opacity: 1;
