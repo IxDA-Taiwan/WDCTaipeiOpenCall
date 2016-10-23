@@ -1,5 +1,5 @@
 export default {
-  className: 'en',
+  className: 'zhTW',
   initial: {
     menu: {
       title1: '食物與健康',
@@ -150,5 +150,10 @@ export default {
       caption: '在餐廳直接購買食材，食在所app上購買食材，直接在餐廳取貨！',
       content: '對於習慣在實體店購買食材的上班族以及大眾，食在所的產品都可以在餐廳買到，實在所平台讓用戶跟餐廳的關係更加緊密。餐廳也可以藉此更了解用戶的飲食喜好。『食材便利店』將所有希望多元化經營的餐廳、超商、零售商，納入服務體系，讓業者可以成為實體的食材購買點和取貨合作點，使安心的食材滲入各個使用者生活的角落。'
     }
+  },
+  footer: {
+    organizer: '主辦單位',
+    chiefexecutive: '執行總籌',
+    executive: '企劃執行'
   }
 }

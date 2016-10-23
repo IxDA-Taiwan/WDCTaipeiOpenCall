@@ -4,23 +4,23 @@
       <div class="wrap">
         <div class="group">
           <span class="title">
-            執行單位
+            {{{ $t('footer.organizer') }}}
           </span>
-          <img src="/static/assets/logo_continuum.png" style="margin-right: 30px;" />
-          <img src="/static/assets/logo_ixda.png" />
+          <img src="/static/assets/logo_wdc.png" style="margin-right: 30px;"/>
+          <img src="/static/assets/logo_gov.png" />
         </div>
         <div class="group">
           <span class="title">
-            主辦單位
+            {{{ $t('footer.chiefexecutive') }}}
           </span>
           <img src="/static/assets/logo_creative.png" />
         </div>
         <div class="group">
           <span class="title">
-            指導單位
+            {{{ $t('footer.executive') }}}
           </span>
-          <img src="/static/assets/logo_wdc.png" style="margin-right: 30px;"/>
-          <img src="/static/assets/logo_gov.png" />
+          <img src="/static/assets/logo_continuum.png" style="margin-right: 30px;" />
+          <img src="/static/assets/logo_ixda.png" />
         </div>
       </div>
     </div>
